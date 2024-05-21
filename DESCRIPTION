@@ -1,18 +1,21 @@
 Package: ugabore
-Title: What the Package Does (One Line, Title Case)
+Title: Borehole repair data from central Uganda
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-2567-3343")),
+    person("Joseph", "Lwere", , "ljc3084@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0009-7113-2303")))
+Description: Data set about borehole repair records from the borehole operation and maintenance company operating in central Uganda. Population data is picked as an interview from a representative of the Local Water User Committees (LWUCs). The data on the technical specifications about the borehole is picked from the borehole records file from the company.
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Language: en-GB
 LazyData: true
 Config/Needs/website: rmarkdown
-Date: 2024-05-03
+Date: 2024-05-21
 URL: https://github.com/openwashdata/ugabore
 BugReports: https://github.com/openwashdata/ugabore/issues
+Depends: 
+    R (>= 2.10)

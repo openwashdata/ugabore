@@ -1,0 +1,18 @@
+#' Borehole repair data from central Uganda
+#'
+#' Data set about borehole repair records from the borehole operation and maintenance company operating in central Uganda. Population data is picked as an interview from a representative of the Local Water User Committees (LWUCs). The data on the technical specifications about the borehole is picked from the borehole records file from the company.
+#'
+#' @format A tibble with  173 rows and 10 variables
+#' \describe{
+#'   \item{community}{Local name used to refer to the administrative unit 5 where the borehole is located.}
+#'   \item{parish}{Local name used to refer to the administrative unit 4 where the borehole is located.}
+#'   \item{sub_county}{Local name used to refer to the administrative unit 3 where the borehole is located.}
+#'   \item{source_id}{Unique identification number assigned to the borehole by the borehole maintenance company.}
+#'   \item{repair_date}{Most recent repair date of the borehole.}
+#'   \item{population_served}{Number of people that collect water from the borehole.}
+#'   \item{well_depth}{Total depth of the borehole (measured in meters).}
+#'   \item{static_water_depth}{Depth of the stable water level within the borehole when pumping isn't happening (measured in meters).}
+#'   \item{pump_installation_depth}{Depth of the pump when installed from land surface (measured in meters).}
+#'   \item{well_yield}{Water production capacity of the borehole (measured in m3/h).}
+#' }
+"ugabore"

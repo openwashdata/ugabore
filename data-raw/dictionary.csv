@@ -1,1 +1,11 @@
 directory,file_name,variable_name,variable_type,description
+data,ugabore.rda,community,character,Local name used to refer to the administrative unit 5 where the borehole is located.
+data,ugabore.rda,parish,character,Local name used to refer to the administrative unit 4 where the borehole is located.
+data,ugabore.rda,sub_county,character,Local name used to refer to the administrative unit 3 where the borehole is located.
+data,ugabore.rda,source_id,character,Unique identification number assigned to the borehole by the borehole maintenance company.
+data,ugabore.rda,repair_date,double,Most recent repair date of the borehole.
+data,ugabore.rda,population_served,double,Number of people that collect water from the borehole.
+data,ugabore.rda,well_depth,double,Total depth of the borehole (measured in meters).
+data,ugabore.rda,static_water_depth,double,Depth of the stable water level within the borehole when pumping isn't happening (measured in meters).
+data,ugabore.rda,pump_installation_depth,double,Depth of the pump when installed from land surface (measured in meters).
+data,ugabore.rda,well_yield,double,Water production capacity of the borehole (measured in m3/h).
