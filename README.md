@@ -222,8 +222,10 @@ custom_colors <- c(
   "Kasangati Town Council" = "#CAB2D6", 
   "Kasangombe" = "#FDBF6F", 
   "Katikamu" = "gray70", "Kikyusa" = "khaki2",
-  "Kira" = "maroon", "Luwero" = "orchid1", "Luwero Tc" = "deeppink1", "Makulubita" = "blue1", "Namayumba Town Council" = "steelblue4",
-  "Wobulenzi Tc" = "darkturquoise", "Zirobwe" = "green1", "NA" = "yellow4")
+  "Kira" = "maroon", "Luwero" = "orchid1", "Luwero Tc" = "deeppink1", 
+  "Makulubita" = "blue1", "Namayumba Town Council" = "steelblue4",
+  "Wobulenzi Tc" = "darkturquoise", "Zirobwe" = "green1", 
+  "NA" = "yellow4")
 
 # Summarize data by sub_county
 summary_data <- ugabore |> 
@@ -232,9 +234,10 @@ summary_data <- ugabore |>
             mean_population_served = mean(population_served, na.rm = TRUE))
 
 # Plot summarized data
-ggplot(summary_data, aes(x = mean_well_yield, y = mean_population_served, color = sub_county)) +
+ggplot(summary_data, aes(x = mean_well_yield, y = mean_population_served, 
+                         color = sub_county)) +
   geom_point(size = 3, alpha = 0.7) +
-  labs(title = "Number of people collecting water vs water production capacity by sub-county\n",
+  labs(title = "Water collection versus production by sub-county",
        x = "\naverage water production capacity in m3/h",
        y = "average number of people\n",
        color = "sub-county") +
