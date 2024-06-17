@@ -22,8 +22,11 @@ data_in <- read_csv("data-raw/borehole_repair_data.csv") |>
   as_tibble()
 
 # Tidy data --------------------------------------------------------------------
+# Rename variable
+# Delete last two rows because of missing values
 ugabore <- data_in |>
-  rename("well_yield" = "well_yield_(m^3/hr)")
+  rename("well_yield" = "well_yield_(m^3/hr)") |>
+  head(-2)
 
 # Export Data ------------------------------------------------------------------
 usethis::use_data(ugabore, overwrite = TRUE)

@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![License: CC BY
-4.0](https://img.shields.io/badge/License-CC_BY_4.0-steelblue.svg)](https://creativecommons.org/licenses/by/4.0/)
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightblue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 <!-- badges: end -->
 
@@ -57,7 +57,7 @@ Uganda. The package provides access to one dataset.
 library(ugabore)
 ```
 
-The `ugabore` data set has 10 variables and 173 observations. For an
+The `ugabore` data set has 10 variables and 171 observations. For an
 overview of the variable names, see the following table.
 
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
@@ -234,9 +234,9 @@ summary_data <- ugabore |>
 # Plot summarized data
 ggplot(summary_data, aes(x = mean_well_yield, y = mean_population_served, color = sub_county)) +
   geom_point(size = 3, alpha = 0.7) +
-  labs(title = "Number of people collecting water vs water production capacity by sub-county",
-       x = "average water production capacity in m3/h",
-       y = "average number of people",
+  labs(title = "Number of people collecting water vs water production capacity by sub-county\n",
+       x = "\naverage water production capacity in m3/h",
+       y = "average number of people\n",
        color = "sub-county") +
   scale_color_manual(values = custom_colors) +
   theme_minimal()
