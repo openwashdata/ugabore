@@ -15,7 +15,9 @@ repair data collected from two districts in central Uganda where a
 borehole operation and maintenance program is run. The dataset is
 associated with the following [project
 report](https://ds4owd-001.github.io/project-ljc3084/) completed by
-Joseph Lwere for the “data science for openwashdata” course.
+Joseph Lwere for the [“data science for openwashdata”
+course](https://ds4owd-001.github.io/website/) offered by
+[openwashdata.org](https://openwashdata.org/).
 
 ## Installation
 
@@ -60,7 +62,7 @@ library(ugabore)
 The `ugabore` data set has 10 variables and 171 observations. For an
 overview of the variable names, see the following table.
 
-<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -195,8 +197,8 @@ Water production capacity of the borehole (measured in m3/h).
 
 ## Example: Water production capacity versus number of people collecting
 
-Here is a basic example illustrating the relationship between the number
-of people collecting water from boreholes in a sub-county and the water
+Here is an example illustrating the relationship between the number of
+people collecting water from boreholes in a sub-county and the water
 production capacity of the corresponding boreholes. From the plot, we
 see that the sub-county of Kalagala has the highest water production
 capacity by far. However, it is not the sub-county that serves the most
@@ -242,7 +244,7 @@ ggplot(summary_data, aes(x = mean_well_yield, y = mean_population_served,
        y = "average number of people\n",
        color = "sub-county") +
   scale_color_manual(values = custom_colors) +
-  theme_minimal()
+  theme_minimal() 
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" />
@@ -261,7 +263,8 @@ citation("ugabore")
 #> To cite package 'ugabore' in publications use:
 #> 
 #>   Götschmann M, Lwere J (2024). _ugabore: Borehole repair data from
-#>   central Uganda_. R package version 0.0.0.9000,
+#>   central Uganda_. R package version 0.0.0.9000, commit
+#>   bb70c351dc0cc44b46bf54bdc11c8c4c034a1a17,
 #>   <https://github.com/openwashdata/ugabore>.
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -270,12 +273,13 @@ citation("ugabore")
 #>     title = {ugabore: Borehole repair data from central Uganda},
 #>     author = {Margaux Götschmann and Joseph Lwere},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     note = {R package version 0.0.0.9000, commit bb70c351dc0cc44b46bf54bdc11c8c4c034a1a17},
 #>     url = {https://github.com/openwashdata/ugabore},
 #>   }
 ```
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
 
 <div id="ref-lapworth2020drinking" class="csl-entry">
 

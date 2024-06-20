@@ -32,7 +32,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of `ugabore` is to provide users with documentation on borehole repair data collected from two districts in central Uganda where a borehole operation and maintenance program is run. The dataset is associated with the following [project report](https://ds4owd-001.github.io/project-ljc3084/) completed by Joseph Lwere for the "data science for openwashdata" course.
+The goal of `ugabore` is to provide users with documentation on borehole repair data collected from two districts in central Uganda where a borehole operation and maintenance program is run. The dataset is associated with the following [project report](https://ds4owd-001.github.io/project-ljc3084/) completed by Joseph Lwere for the ["data science for openwashdata" course](https://ds4owd-001.github.io/website/) offered by [openwashdata.org](https://openwashdata.org/).
 
 ## Installation
 
@@ -54,6 +54,7 @@ library(readr)
 library(stringr)
 library(gt)
 library(kableExtra)
+library(ggtext)
 
 extdata_path <- "https://github.com/openwashdata/ugabore/raw/main/inst/extdata/"
 
@@ -68,6 +69,7 @@ read_csv("data-raw/dictionary.csv") |>
   knitr::kable()
 
 ```
+
 ## Project goal
 
 Boreholes are the main technology used to access groundwater in Uganda, according to [@owor2022permeability], and they are also a source of drinking water for households in rural communities in Africa, including Uganda [@lapworth2020drinking]. Therefore, it is crucial to have good quality data to inform decision-making and planning. This project examines data collected from two districts in central Uganda where a borehole operation and maintenance program is run. As professional operation and maintenance is considered the future for borehole functionality in Uganda [@smith2023does], this project report offers more insights into research on this topic.
@@ -93,7 +95,7 @@ readr::read_csv("data-raw/dictionary.csv") |>
 
 ## Example: Water production capacity versus number of people collecting
 
-Here is a basic example illustrating the relationship between the number of people collecting water from boreholes in a sub-county and the water production capacity of the corresponding boreholes. From the plot, we see that the sub-county of Kalagala has the highest water production capacity by far. However, it is not the sub-county that serves the most people, suggesting it may be the richest one. On another note, the sub-counties Bombo Town Council and Luwero Town Council have the most people collecting water from their boreholes but do not have high water production capacity, indicating a need for improvement.
+Here is an example illustrating the relationship between the number of people collecting water from boreholes in a sub-county and the water production capacity of the corresponding boreholes. From the plot, we see that the sub-county of Kalagala has the highest water production capacity by far. However, it is not the sub-county that serves the most people, suggesting it may be the richest one. On another note, the sub-counties Bombo Town Council and Luwero Town Council have the most people collecting water from their boreholes but do not have high water production capacity, indicating a need for improvement.
 
 ```{r, warning=FALSE}
 library(ugabore)
@@ -132,7 +134,7 @@ ggplot(summary_data, aes(x = mean_well_yield, y = mean_population_served,
        y = "average number of people\n",
        color = "sub-county") +
   scale_color_manual(values = custom_colors) +
-  theme_minimal()
+  theme_minimal() 
 ```
 
 ## License
