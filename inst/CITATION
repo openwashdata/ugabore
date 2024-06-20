@@ -1,0 +1,18 @@
+
+bibentry(bibtype = "Misc",
+         key = "gotschmann_etall:2024",
+         title = "ugabore: Borehole repair data from central Uganda",
+         author = c(person(given = "Margaux",
+                           family = "Götschmann",
+                           email = "margauxg@ethz.ch",
+                           comment = c(ORCID = "0009-0002-2567-3343")),
+                    person(given = "Joseph",
+                           family = "Lwere",
+                           email = "ljc3084@gmail.com",
+                           comment = c(ORCID = "0009-0009-7113-2303"))),
+         year = "2024",
+         doi = "10.5281/zenodo.12188179",
+         url = "https://github.com/openwashdata/ugabore",
+         abstract = "Data set about borehole repair records from the borehole operation and maintenance company operating in central Uganda. Population data is picked as an interview from a representative of the Local Water User Committees (LWUCs). The data on the technical specifications about the borehole is picked from the borehole records file from the company.",
+         keywords = "analysis,borehole,data,open-data,r,uganda,wash,water",
+         version = "0.0.1")

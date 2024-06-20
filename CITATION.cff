@@ -1,0 +1,44 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "ugabore" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'ugabore: Borehole repair data from central Uganda'
+version: 0.0.1
+doi: 10.5281/zenodo.12188179
+abstract: Data set about borehole repair records from the borehole operation and maintenance
+  company operating in central Uganda. Population data is picked as an interview from
+  a representative of the Local Water User Committees (LWUCs). The data on the technical
+  specifications about the borehole is picked from the borehole records file from
+  the company.
+authors:
+- family-names: Götschmann
+  given-names: Margaux
+  email: margauxg@ethz.ch
+  orcid: https://orcid.org/0009-0002-2567-3343
+- family-names: Lwere
+  given-names: Joseph
+  email: ljc3084@gmail.com
+  orcid: https://orcid.org/0009-0009-7113-2303
+repository-code: https://github.com/openwashdata/ugabore
+url: https://github.com/openwashdata/ugabore
+date-released: '2024-06-20'
+contact:
+- family-names: Götschmann
+  given-names: Margaux
+  email: margauxg@ethz.ch
+  orcid: https://orcid.org/0009-0002-2567-3343
+keywords:
+- analysis
+- borehole
+- data
+- open-data
+- r
+- uganda
+- wash
+- water
+
