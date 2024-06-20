@@ -7,7 +7,7 @@
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightblue.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `ugabore` is to provide users with documentation on borehole
@@ -62,7 +62,7 @@ library(ugabore)
 The `ugabore` data set has 10 variables and 171 observations. For an
 overview of the variable names, see the following table.
 
-<table class="table table-striped" style="color: black; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -263,8 +263,7 @@ citation("ugabore")
 #> To cite package 'ugabore' in publications use:
 #> 
 #>   Götschmann M, Lwere J (2024). _ugabore: Borehole repair data from
-#>   central Uganda_. R package version 0.0.0.9000, commit
-#>   bb70c351dc0cc44b46bf54bdc11c8c4c034a1a17,
+#>   central Uganda_. R package version 0.0.0.9000,
 #>   <https://github.com/openwashdata/ugabore>.
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -273,13 +272,12 @@ citation("ugabore")
 #>     title = {ugabore: Borehole repair data from central Uganda},
 #>     author = {Margaux Götschmann and Joseph Lwere},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000, commit bb70c351dc0cc44b46bf54bdc11c8c4c034a1a17},
+#>     note = {R package version 0.0.0.9000},
 #>     url = {https://github.com/openwashdata/ugabore},
 #>   }
 ```
 
-<div id="refs" class="references csl-bib-body hanging-indent"
-entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 
 <div id="ref-lapworth2020drinking" class="csl-entry">
 

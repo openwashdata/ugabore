@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightblue.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `ugabore` is to provide users with documentation on borehole repair data collected from two districts in central Uganda where a borehole operation and maintenance program is run. The dataset is associated with the following [project report](https://ds4owd-001.github.io/project-ljc3084/) completed by Joseph Lwere for the ["data science for openwashdata" course](https://ds4owd-001.github.io/website/) offered by [openwashdata.org](https://openwashdata.org/).
