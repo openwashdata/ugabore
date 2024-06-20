@@ -8,6 +8,7 @@
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightblue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![R-CMD-check](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/770378167.svg)](https://zenodo.org/doi/10.5281/zenodo.12188179)
 <!-- badges: end -->
 
 The goal of `ugabore` is to provide users with documentation on borehole
