@@ -7,3 +7,5 @@
 ^pkgdown$
 ^references.bib$
 ^\.github$
+^CITATION\.cff$
+^LICENSE\.md$
