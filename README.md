@@ -8,7 +8,7 @@
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightblue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![R-CMD-check](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml)
-[![DOI](https://zenodo.org/badge/770378167.svg)](https://zenodo.org/doi/10.5281/zenodo.12188179)
+[![DOI](https://zenodo.org/badge/770378167.svg)](https://doi.org/10.5281/zenodo.12188178)
 <!-- badges: end -->
 
 The goal of `ugabore` is to provide users with documentation on borehole
@@ -33,8 +33,8 @@ devtools::install_github("openwashdata/ugabore")
 Alternatively, you can download the individual datasets as a CSV or XLSX
 file from the table below.
 
-| dataset | CSV                                                                                       | XLSX                                                                                        |
-|:--------|:------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|
+| dataset | CSV | XLSX |
+|:---|:---|:---|
 | ugabore | [Download CSV](https://github.com/openwashdata/ugabore/raw/main/inst/extdata/ugabore.csv) | [Download XLSX](https://github.com/openwashdata/ugabore/raw/main/inst/extdata/ugabore.xlsx) |
 
 ## Project goal
@@ -42,13 +42,13 @@ file from the table below.
 Boreholes are the main technology used to access groundwater in Uganda,
 according to (Owor et al. 2022), and they are also a source of drinking
 water for households in rural communities in Africa, including Uganda
-(Lapworth et al. 2020). Therefore, it is crucial to have good quality
-data to inform decision-making and planning. This project examines data
-collected from two districts in central Uganda where a borehole
-operation and maintenance program is run. As professional operation and
-maintenance is considered the future for borehole functionality in
-Uganda (Smith, Ongom, and Davis 2023), this project report offers more
-insights into research on this topic.
+(<span class="nocase">Lapworth et al.</span> 2020). Therefore, it is
+crucial to have good quality data to inform decision-making and
+planning. This project examines data collected from two districts in
+central Uganda where a borehole operation and maintenance program is
+run. As professional operation and maintenance is considered the future
+for borehole functionality in Uganda (Smith et al. 2023), this project
+report offers more insights into research on this topic.
 
 ## Data
 
@@ -64,136 +64,229 @@ The `ugabore` data set has 10 variables and 171 observations. For an
 overview of the variable names, see the following table.
 
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+
 <thead>
+
 <tr>
+
 <th style="text-align:left;">
+
 variable_name
 </th>
+
 <th style="text-align:left;">
+
 variable_type
 </th>
+
 <th style="text-align:left;">
+
 description
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td style="text-align:left;">
+
 community
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Local name used to refer to the administrative unit 5 where the borehole
 is located.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 parish
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Local name used to refer to the administrative unit 4 where the borehole
 is located.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sub_county
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Local name used to refer to the administrative unit 3 where the borehole
 is located.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 source_id
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Unique identification number assigned to the borehole by the borehole
 maintenance company.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 repair_date
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Most recent repair date of the borehole.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 population_served
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Number of people that collect water from the borehole.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 well_depth
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Total depth of the borehole (measured in meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 static_water_depth
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Depth of the stable water level within the borehole when pumping isn’t
 happening (measured in meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pump_installation_depth
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Depth of the pump when installed from land surface (measured in meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 well_yield
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Water production capacity of the borehole (measured in m3/h).
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 ## Example: Water production capacity versus number of people collecting
@@ -248,7 +341,7 @@ ggplot(summary_data, aes(x = mean_well_yield, y = mean_population_served,
   theme_minimal() 
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ## License
 
@@ -263,18 +356,22 @@ Please cite this package using:
 citation("ugabore")
 #> To cite package 'ugabore' in publications use:
 #> 
-#>   Götschmann M, Lwere J (2024). _ugabore: Borehole repair data from
-#>   central Uganda_. R package version 0.0.0.9000,
+#>   Götschmann M, Lwere J, Schöbitz L (2024). "ugabore: Borehole repair
+#>   data from central Uganda." doi:10.5281/zenodo.12188178
+#>   <https://doi.org/10.5281/zenodo.12188178>.
 #>   <https://github.com/openwashdata/ugabore>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
+#>   @Misc{gotschmann_etall:2024,
 #>     title = {ugabore: Borehole repair data from central Uganda},
-#>     author = {Margaux Götschmann and Joseph Lwere},
+#>     author = {Margaux Götschmann and Joseph Lwere and Lars Schöbitz},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     doi = {10.5281/zenodo.12188178},
 #>     url = {https://github.com/openwashdata/ugabore},
+#>     abstract = {Data set about borehole repair records from the borehole operation and maintenance company operating in central Uganda. Population data is picked as an interview from a representative of the Local Water User Committees (LWUCs). The data on the technical specifications about the borehole is picked from the borehole records file from the company.},
+#>     keywords = {open data,washdata,boreholes,borehole repair,operation and maintenance,groundwater,water supply,Uganda,analysis,borehole,data,open-data,r,uganda,wash,water},
+#>     version = {0.0.1},
 #>   }
 ```
 
@@ -282,10 +379,9 @@ citation("ugabore")
 
 <div id="ref-lapworth2020drinking" class="csl-entry">
 
-Lapworth, DJ, AM MacDonald, S Kebede, M Owor, G Chavula, H Fallas, P
-Wilson, et al. 2020. “Drinking Water Quality from Rural
-Handpump-Boreholes in Africa.” *Environmental Research Letters* 15 (6):
-064020.
+<span class="nocase">Lapworth, DJ, AM MacDonald, S Kebede, et al.</span>
+2020. “Drinking Water Quality from Rural Handpump-Boreholes in Africa.”
+*Environmental Research Letters* 15 (6): 064020.
 
 </div>
 

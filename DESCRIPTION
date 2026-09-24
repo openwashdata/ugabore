@@ -2,20 +2,25 @@ Package: ugabore
 Title: Borehole repair data from central Uganda
 Version: 0.0.1
 Authors@R: c(
-    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
+    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = "aut",
            comment = c(ORCID = "0009-0002-2567-3343")),
     person("Joseph", "Lwere", , "ljc3084@gmail.com", role = "aut",
-           comment = c(ORCID = "0009-0009-7113-2303")))
+           comment = c(ORCID = "0009-0009-7113-2303")),
+    person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = "cre",
+           comment = c(ORCID = "0000-0003-2196-5015")))
 Description: Data set about borehole repair records from the borehole operation and maintenance company operating in central Uganda. Population data is picked as an interview from a representative of the Local Water User Committees (LWUCs). The data on the technical specifications about the borehole is picked from the borehole records file from the company.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 Language: en-GB
 LazyData: true
-Config/Needs/website: rmarkdown
-Date: 2024-05-21
+Config/Needs/website: rmarkdown, dplyr, ggplot2, ggtext, gt, kableExtra, knitr, readr, stringr
+Date: 2024-06-20
 URL: https://github.com/openwashdata/ugabore
 BugReports: https://github.com/openwashdata/ugabore/issues
 Depends: 
     R (>= 2.10)
+X-schema.org-keywords: open data, washdata, boreholes, borehole repair, operation and maintenance, groundwater, water supply, Uganda
+X-schema.org-spatialCoverage: Luwero, Wakiso and Nakaseke districts, Central Region, Uganda
+X-schema.org-temporalCoverage: 2021-10-28/2023-11-25
+Config/roxygen2/version: 8.0.0

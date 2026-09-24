@@ -5,7 +5,7 @@
 \alias{ugabore}
 \title{Borehole repair data from central Uganda}
 \format{
-A tibble with  173 rows and 10 variables
+A tibble with 171 rows and 10 variables
 \describe{
 \item{community}{Local name used to refer to the administrative unit 5 where the borehole is located.}
 \item{parish}{Local name used to refer to the administrative unit 4 where the borehole is located.}
