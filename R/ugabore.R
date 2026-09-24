@@ -2,7 +2,7 @@
 #'
 #' Data set about borehole repair records from the borehole operation and maintenance company operating in central Uganda. Population data is picked as an interview from a representative of the Local Water User Committees (LWUCs). The data on the technical specifications about the borehole is picked from the borehole records file from the company.
 #'
-#' @format A tibble with  173 rows and 10 variables
+#' @format A tibble with 171 rows and 10 variables
 #' \describe{
 #'   \item{community}{Local name used to refer to the administrative unit 5 where the borehole is located.}
 #'   \item{parish}{Local name used to refer to the administrative unit 4 where the borehole is located.}

@@ -12,12 +12,15 @@ Description: Data set about borehole repair records from the borehole operation 
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 Language: en-GB
 LazyData: true
-Config/Needs/website: rmarkdown
-Date: 2024-05-21
+Config/Needs/website: rmarkdown, dplyr, ggplot2, ggtext, gt, kableExtra, knitr, readr, stringr
+Date: 2024-06-20
 URL: https://github.com/openwashdata/ugabore
 BugReports: https://github.com/openwashdata/ugabore/issues
 Depends: 
     R (>= 2.10)
+X-schema.org-keywords: open data, washdata, boreholes, borehole repair, operation and maintenance, groundwater, water supply, Uganda
+X-schema.org-spatialCoverage: Luwero, Wakiso and Nakaseke districts, Central Region, Uganda
+X-schema.org-temporalCoverage: 2021-10-28/2023-11-25
+Config/roxygen2/version: 8.0.0
