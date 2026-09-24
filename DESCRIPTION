@@ -2,10 +2,12 @@ Package: ugabore
 Title: Borehole repair data from central Uganda
 Version: 0.0.1
 Authors@R: c(
-    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
+    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = "aut",
            comment = c(ORCID = "0009-0002-2567-3343")),
     person("Joseph", "Lwere", , "ljc3084@gmail.com", role = "aut",
-           comment = c(ORCID = "0009-0009-7113-2303")))
+           comment = c(ORCID = "0009-0009-7113-2303")),
+    person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = "cre",
+           comment = c(ORCID = "0000-0003-2196-5015")))
 Description: Data set about borehole repair records from the borehole operation and maintenance company operating in central Uganda. Population data is picked as an interview from a representative of the Local Water User Committees (LWUCs). The data on the technical specifications about the borehole is picked from the borehole records file from the company.
 License: CC BY 4.0
 Encoding: UTF-8
