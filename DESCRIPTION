@@ -14,7 +14,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Language: en-GB
 LazyData: true
-Config/Needs/website: rmarkdown, dplyr, ggplot2, ggtext, gt, kableExtra, knitr, readr, stringr
+Config/Needs/website: rmarkdown, dplyr, ggplot2, ggtext, gt, kableExtra, knitr, readr, stringr, brand.yml
 Date: 2024-06-20
 URL: https://github.com/openwashdata/ugabore
 BugReports: https://github.com/openwashdata/ugabore/issues
@@ -33,4 +33,5 @@ Config/washr/publisher: Published by [openwashdata](https://openwashdata.org), a
 Config/washr/home: https://openwashdata.org
 Config/washr/catalog: https://openwashdata.org/pages/gallery/data/
 Config/washr/community: This package is part of [openwashdata](https://openwashdata.org). Browse the [data catalogue](https://openwashdata.org/pages/gallery/data/) or get the [newsletter](https://openwashdata.org/pages/newsletter/).
-Config/washr/version: 1.2.1
+Config/washr/version: 1.2.2
+Config/washr/brand: v1.1.0

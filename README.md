@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ugabore
+# ugabore <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -10,8 +10,6 @@
 [![R-CMD-check](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/ugabore/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/770378167.svg)](https://doi.org/10.5281/zenodo.12188178)
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 The goal of `ugabore` is to provide users with documentation on borehole
 repair data collected from two districts in central Uganda where a
@@ -351,6 +349,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/ugabore/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
