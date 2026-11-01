@@ -1,7 +1,5 @@
 # ugabore
 
-A data package published by [openwashdata](https://openwashdata.org).
-
 The goal of `ugabore` is to provide users with documentation on borehole
 repair data collected from two districts in central Uganda where a
 borehole operation and maintenance program is run. The dataset is
@@ -130,6 +128,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/ugabore/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
